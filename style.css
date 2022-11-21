@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-size:50px;
+    text-align: center;
+    background: rgb(56, 55, 55);
+    color: aliceblue;
+}
+section{
+    min-height: 900px;
+    background: url(mae-mu-IZ0LRt1khgM-unsplash.jpg)center/cover no-repeat;
+    }
+    .myproject{
+        
+        color:aqua;
+
+    }
+    .myproject a{
+        
+        color:aqua;
+
+    }
+ 
+
