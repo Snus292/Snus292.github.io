@@ -11,17 +11,33 @@ html {
 }
 section{
     min-height: 900px;
+    padding-top: 30px;
     background: url(mae-mu-IZ0LRt1khgM-unsplash.jpg)center/cover no-repeat;
+    text-align: center;
+    color: #3d29e1;
+    font-size:70px;
     }
+section ::target-text{
+    margin-top: 100px;
+}
     .myproject{
+        text-align: center;
+        margin-top: 60px;
         
-        color:aqua;
+        
+        
+        
 
     }
     .myproject a{
         
-        color:aqua;
-
+        text-align: center;
+        color:rgb(91 142 255);
+        display: block;
+        font-size:50px;
+    }
+    .myproject a iframe{
+        display:inline-block
     }
  
 
