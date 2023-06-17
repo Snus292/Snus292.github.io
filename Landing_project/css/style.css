@@ -1,0 +1,436 @@
+
+.html{
+
+  font-family: "Roboto",sans-serif !important;
+}
+body{
+  font-family: "Roboto",sans-serif !important;
+}
+header{
+  
+  max-width: 1700px;
+  
+
+  margin: auto;
+}
+footer{
+  width: 100%;
+  background-color: whitesmoke
+}
+.navbar-toggler-icon{
+  color: black;
+}
+.site_content{
+ 
+  display: block;
+  position: relative;
+  width: auto;
+  background-color: white;
+}
+.nav-pills .nav-link.active{
+  font-size: 20px;
+  transform: rotate(45deg);
+  transition: 1s;
+}
+.carousel-inner{
+  max-height: 900px;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row .card{
+  border: none;
+  
+
+}
+
+
+
+  
+
+.carousel-item img{
+  max-height: 900px;
+  height: 100%;
+  
+}
+
+
+.scrollspy-example{
+  height:300px ;
+  position: relative;
+  overflow-y: scroll
+}
+
+main{
+  padding: 0px 30px;
+  
+}
+
+
+
+.carousel-inner .carousel-control-next,.carousel-inner .carousel-control-prev{
+  width: 5%;
+}
+.carousel-item .carousel-caption{
+  left: 5%;
+  right: 5%;
+  bottom: 0;
+  height: 100%;
+  display: block;
+  width: auto;
+  /* #fbe2dc */
+}
+.carousel-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  color: black;
+  left: 0;
+  top: 20%;
+  
+}
+.carousel-text h1{
+  
+  margin: 0;
+
+}
+.carousel-text p{
+  margin-top: 1em;
+  max-width: 400px;
+  text-align: start;
+  
+  
+}
+.carousel-text .btn, .appointment .btn{
+  padding: 15px 40px;
+  margin-top: 1em;
+  margin-left: 15px;
+  
+
+  
+  
+  
+  
+}
+
+
+.blue-haired{
+  
+  position: absolute;
+  width: auto;
+  left: 25%;
+  bottom: 0;
+}
+.black-haired{
+  position: absolute;
+  width: auto;
+  left: 0%;
+  bottom: 0;
+
+}
+  
+  
+.brunette{
+  right: 0;
+  bottom: 0;
+
+}
+
+.blond{
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  right: 0;
+ 
+}
+
+
+  
+
+
+
+.carousel-img.square-transition {
+  animation-direction: alternate;
+  transform: translate(-50px);
+  
+}
+
+.square-wrapper{
+  display: block;
+  position: relative;
+  width:   100%;
+  height: 100%;
+  
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .carousel-img {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+/* .element-animation {
+  
+
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+} */
+
+.carousel-text.element-animation{
+  opacity: 0;
+  transform: translateX(100px);
+  
+}
+.carousel-text.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
+
+
+.btn.element-animation {
+  
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.btn.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+.logo.element-animation {
+  
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.logo.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+.card.element-animation,.example-content-secondary.element-animation{
+  opacity: 0;
+  transform: translateX(100px);
+  
+  
+}
+.card.element-animation.element-show,.example-content-secondary.element-animation.element-show {
+  
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+
+
+}
+.example-content-main.element-animation{
+  opacity: 0;
+  transform: translateX(-100px);
+  
+  
+}
+.example-content-main.element-animation.element-show {
+  
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
+
+.animation-wrap{
+  display: block;
+  position: absolute;
+  background-color: #665eff;
+  width: 50%;
+  height: 100%;
+}
+.animation-appointment{
+  display: block;
+  position: absolute;
+  background-color: #665eff;
+  width: 50%;
+  height: 100%;
+}
+.round-animation-wrap{
+  display: block;
+  position: absolute;
+  background-color: #ecc3b2;
+  width: 50%;
+  height: 100%;
+  border-radius: 700px 100px 50px 200px;
+}
+
+.animation-wrap.once-animation {
+  animation: wipe-enter1 5s 1;
+  transform-origin: left;
+
+}
+@keyframes wipe-enter1 {
+  0% {
+    transform: scale(0, 1);
+  }
+
+  50% {
+    transform:  scale(1,1);
+  }
+}
+.round-animation-wrap.once-animation2 {
+  animation: wipe-enter2 5s 1;
+  
+
+}
+@keyframes wipe-enter2 {
+  0% {
+    transform: scale(0.9)
+  }
+  50% {
+    transform: scale(1)
+  }
+}
+.animation-appointment.once-animation {
+  animation: wipe-enter3 5s 1;
+  transform-origin: left;
+
+}
+@keyframes wipe-enter3 {
+  0% {
+    transform: scale(0, 1);
+  }
+
+  50% {
+    transform:  scale(1,1);
+  }
+}
+
+
+
+
+
+.site_content .container{
+  max-width: 1600px;
+  
+  padding: 50px 0px;
+}
+
+
+
+.element-1{
+  background-color: #faf5db;
+
+}
+.element-2{
+  background-color: #f0ddd8;
+
+}
+.element-3{
+  background-color: #dcecfb;
+
+}
+.widget-caption{ 
+  text-transform: uppercase; 
+  width: 24px;
+  height: auto;   
+  position: absolute;
+  padding: 5% 5%;
+}
+.widget-caption.element-animation{
+  opacity: 0;
+  transform: translateY(50px);
+  
+  
+}
+.widget-caption.element-animation.element-show {
+  
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+.display-5{
+  width: inherit;
+  
+  line-height: 0.9;
+}
+.our-story{
+  max-height: 700px;
+  height: 100%;
+}
+.widget-wrap{
+  display: block;
+  position: relative;
+  background-color: #665eff;
+  max-height: 700px;
+  height: 100%;
+  width: auto;
+  
+}
+.about-container{
+  background-color: #c3a4f6;
+}
+
+.parallax__layer {
+  position: relative;
+  display: block;
+  width: auto;
+  max-height: 700px;
+  left: 25%;
+}
+
+
+#parallax-0 {
+  /* background-image: url(/Landing_project/img/woman4.png); */
+  
+  transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  transition-duration: 3s;
+  transition-property: all;
+ 
+  bottom: 0;
+}
+.parallax{
+  max-height: 700px;
+  height: 100%;
+  width: 100%;
+
+ 
+}
+.appointment-container{
+  
+
+}
+.appointment-bg{
+  
+  display: block;
+  background-size: cover;
+  position: relative;
+  width: auto;
+  height: auto;
+  
+
+}
+.appointment-img{
+  position: relative;
+  display: block;
+  width: auto;
+  max-height: 700px;
+  left: 20%;
+  
+}
+  
+  
+  
+
+  
+
+

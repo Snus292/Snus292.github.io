@@ -1,0 +1,636 @@
+
+.html{
+
+  font-family: "Roboto",sans-serif !important;
+}
+body{
+  font-family: "Roboto",sans-serif !important;
+}
+header{
+  
+  max-width: 1700px;
+  
+
+  margin: auto;
+}
+footer{
+  width: 100%;
+  background-color: whitesmoke
+}
+.navbar-toggler-icon{
+  color: black;
+}
+p{
+  font-family: 'Times New Roman', Times, serif;
+}
+h1{
+  font-family:"Roboto",sans-serif;
+}
+.site_content{
+ 
+  display: block;
+  position: relative;
+  width: auto;
+  background-color: white;
+}
+.nav-pills .nav-link.active{
+  font-size: 20px;
+  transform: rotate(45deg);
+  transition: 1s;
+}
+.carousel-inner{
+  max-height: 900px;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row .card{
+  border: none;
+  
+
+}
+
+
+
+  
+
+.carousel-item img{
+  max-height: 900px;
+  height: 100%;
+  
+}
+
+
+.scrollspy-example{
+  height:300px ;
+  position: relative;
+  overflow-y: scroll
+}
+
+main{
+  padding: 0px 30px;
+  
+}
+
+
+
+.carousel-inner .carousel-control-next,.carousel-inner .carousel-control-prev{
+  width: 5%;
+}
+.carousel-item .carousel-caption{
+  left: 5%;
+  right: 5%;
+  bottom: 0;
+  height: 100%;
+  display: block;
+  width: auto;
+  
+  
+  /* #fbe2dc */
+}
+.carousel-text{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  color: black;
+  align-items:start;
+  top: 25%;
+
+  
+  
+
+  
+}
+
+.carousel-text h2{
+  
+
+}
+.carousel-text h5{
+  letter-spacing: .1em;
+
+}
+
+.carousel-text p{
+  margin-top: 1em;
+  max-width: 400px;
+  text-align: start;
+  font-style: italic;
+  font-size: 20px;
+  
+  
+}
+.btn-photo{
+  position: relative;
+  padding: 15px 40px;
+  margin-top: 1em;
+  margin-left: 15px;
+  color: rgb(13, 13, 15);
+  border-color: rgb(13, 13, 15);
+  background-color:rgba(0, 0, 0, 0);
+  border-radius: 0;
+  
+}
+
+.blue-haired{
+  
+  position: absolute;
+  width: auto;
+  left: 25%;
+  bottom: 0;
+}
+.black-haired{
+  position: absolute;
+  width: auto;
+  left: 0%;
+  bottom: 0;
+
+}
+   
+.brunette{
+  right: 0;
+  bottom: 0;
+
+}
+
+.blond{
+  position: absolute;
+  width: auto;
+  bottom: 0;
+  right: 0;
+ 
+}
+
+.carousel-img.square-transition {
+  animation-direction: alternate;
+  transform: translate(-50px);
+  
+}
+
+.square-wrapper{
+  display: block;
+  position: relative;
+  width:   100%;
+  height: 100%;
+  
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .carousel-img {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+/* .element-animation {
+  
+
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+} */
+
+.carousel-text.element-animation{
+  opacity: 0;
+  transform: translateX(100px);
+  
+}
+.carousel-text.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
+
+
+.btn.element-animation {
+  
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.btn.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+.logo.element-animation {
+  
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.logo.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+.card.element-animation,.from-right.element-animation{
+  opacity: 0;
+  transform: translateX(100px);
+  
+  
+}
+.card.element-animation.element-show,.from-right.element-animation.element-show {
+  
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0px);
+
+
+}
+.from-left.element-animation{
+  opacity: 0;
+  transform: translateX(-100px);
+  
+  
+}
+.from-left.element-animation.element-show {
+  
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0px);
+}
+
+.animation-wrap{
+  display: block;
+  position: absolute;
+  background-color: #665eff;
+  width: 50%;
+  height: 100%;
+}
+.animation-appointment{
+  display: block;
+  position: absolute;
+  background-color: #665eff;
+  width: 50%;
+  height: 100%;
+}
+.round-animation-wrap{
+  display: block;
+  position: absolute;
+  background-color: #ecc3b2;
+  width: 50%;
+  height: 100%;
+  border-radius: 700px 100px 50px 200px;
+}
+
+.animation-wrap.once-animation {
+  animation: wipe-enter1 5s 1;
+  transform-origin: left;
+
+}
+@keyframes wipe-enter1 {
+  0% {
+    transform: scale(0, 1);
+  }
+
+  50% {
+    transform:  scale(1,1);
+  }
+}
+.round-animation-wrap.once-animation2 {
+  animation: wipe-enter2 5s 1;
+  
+
+}
+@keyframes wipe-enter2 {
+  0% {
+    transform: scale(0.9)
+  }
+  50% {
+    transform: scale(1)
+  }
+}
+.animation-appointment.once-animation {
+  animation: wipe-enter3 5s 1;
+  transform-origin: left;
+
+}
+@keyframes wipe-enter3 {
+  0% {
+    transform: scale(0, 1);
+  }
+
+  50% {
+    transform:  scale(1,1);
+  }
+}
+
+.site_content{
+  
+  
+  padding: 50px 0px;
+}
+
+
+
+
+
+.widget-caption{ 
+  text-transform: uppercase; 
+  width: 24px;
+  height: auto;   
+  position: absolute;
+  padding: 5% 5%;
+}
+.widget-caption.element-animation{
+  opacity: 0;
+  transform: translateY(50px);
+  
+  
+}
+.widget-caption.element-animation.element-show {
+  
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+.display-5{
+  width: inherit;
+  
+  line-height: 0.9;
+}
+.our-story{
+  max-height: 700px;
+  height: 100%;
+}
+.widget-wrap{
+  display: block;
+  position: relative;
+  background-color: #665eff;
+  max-height: 700px;
+  height: 100%;
+  width: auto;
+  
+}
+.about-container{
+  background-color: #c3a4f6;
+}
+
+
+
+
+#parallax-0 {
+  /* background-image: url(/Landing_project/img/woman4.png); */
+  
+  transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  transition-duration: 3s;
+  transition-property: all;
+ 
+  bottom: 0;
+}
+.parallax{
+  max-height: 700px;
+  height: 100%;
+  width: 100%;
+
+ 
+}
+
+.appointment-bg{
+  
+  display: block;
+  background-size: cover;
+  position: relative;
+  width: auto;
+  height: auto;
+  
+
+}
+.appointment-img{
+  position: relative;
+  display: block;
+  width: auto;
+  height: 100%;
+  
+  
+  color: #665eff;
+  
+}
+
+.image-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Затемнение картинки */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Плавный переход при наведении */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Показать overlay при наведении */
+
+}
+.social-link-wrap{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.social-link i {
+  font-size: 50px;
+  
+  
+}
+
+/* Добавьте стили для ссылок и иконок */
+.social-link {
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.carousel-container{
+  position: relative;
+  display:block;
+  height: 300px;
+  color:#cecece;
+  margin:150px auto;
+  
+  
+
+ 
+}
+.parallax-carousel {
+  position: sticky;
+  overflow: hidden;
+  /* Установите высоту и другие стили для параллакса */
+  /* Например: */
+  height: 600px;
+  
+}
+
+.parallax-carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Установите фоновое изображение для эффекта параллакса */
+  background-image: url('/LandingProject_PhotoStudia/img/bg/neblack.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.carousel-text-holder{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  margin: 0px auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+
+}
+.card-text-holder{
+  
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  
+}
+
+.parallax-appointment {
+  position: sticky;
+  overflow: hidden;
+  /* Установите высоту и другие стили для параллакса */
+  /* Например: */
+  height: 800px;
+  
+}
+
+.parallax-appointment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Установите фоновое изображение для эффекта параллакса */
+  background-image: url('/LandingProject_PhotoStudia/img/bg/parallax2.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.parallax-about {
+  position: sticky;
+  overflow: hidden;
+  /* Установите высоту и другие стили для параллакса */
+  /* Например: */
+  height: auto;
+  width: auto;
+  
+  
+}
+
+.parallax-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Установите фоновое изображение для эффекта параллакса */
+  background-image: url('/LandingProject_PhotoStudia/img/bg/kkk.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.collapse-camera-overlay {
+  background-color: #ffffff;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  transform: translateY(100%);
+  transition: transform 0.8s ease;
+}
+.collapse-camera-title{
+  opacity: 1;
+  color: #000000;
+  
+  
+  
+
+}
+
+.image-wrapper:hover .collapse-camera-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.image-wrapper:hover .collapse-camera-overlay {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+}
+.parallax__layer1{
+  position: relative;
+ left: 10%;
+}
+.parallax__layer2{
+  position: relative;
+ right: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+
